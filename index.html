@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="멜론 앱 링크">
+    <meta property="og:title" content="멜론 앱 링크">
+    <meta property="og:description" content="멜론 앱 링크를 통해 다양한 콘텐츠를 즐기세요">
+    <meta property="og:image" content="링크에 맞는 이미지 URL을 여기에 추가">
     <title>멜론 앱 링크</title>
     <style>
         body {
-            font-family: Arial, sans-serif; #이거 붙여넣는다? 
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -24,10 +28,6 @@
             width: 90%;
             max-width: 500px;
         }
-        h1 {
-            margin-bottom: 20px;
-            color: #2f2f2f;
-        }
         .link-btn {
             display: inline-block;
             margin: 10px;
@@ -37,61 +37,56 @@
             font-size: 16px;
             border-radius: 8px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s ease-in-out;
         }
         .link-btn:hover {
             background-color: #166fa3;
+            transform: translateY(-2px);
         }
-        .icon {
-            margin-right: 10px;
+        .link-btn:active {
+            transform: translateY(0);
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .link-btn {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>멜론 앱 재생목록 열기</h1>
+        <h1>멜론 앱 링크</h1>
         
         <!-- 안드로이드 링크 4개 -->
-        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,34421197,34748940" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Android_robot_2014.svg" alt="Android" class="icon" width="20"> 안드로이드 1
-        </a>
+        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,34421197,34748940" class="link-btn" role="button" aria-label="안드로이드 링크 1">안드로이드 1</a>
         <br>
-        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,36549241,36634860" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Android_robot_2014.svg" alt="Android" class="icon" width="20"> 안드로이드 2
-        </a>
+        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,36549241,36634860" class="link-btn" role="button" aria-label="안드로이드 링크 2">안드로이드 2</a>
         <br>
-        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,36710003,36820644" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Android_robot_2014.svg" alt="Android" class="icon" width="20"> 안드로이드 3
-        </a>
+        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,36710003,36820644" class="link-btn" role="button" aria-label="안드로이드 링크 3">안드로이드 3</a>
         <br>
-        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,36820645,38684087" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Android_robot_2014.svg" alt="Android" class="icon" width="20"> 안드로이드 4
-        </a>
+        <a href="melonapp://play?ctype=1&menuid=1000002721&cid=38852970,38852971,36820645,38684087" class="link-btn" role="button" aria-label="안드로이드 링크 4">안드로이드 4</a>
 
         <br><br>
         
         <!-- 피시 링크 4개 -->
-        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,34421197,34748940" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Windows_10_logo_%282019%29.svg" alt="PC" class="icon" width="20"> PC 1
-        </a>
+        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,34421197,34748940" class="link-btn" role="button" aria-label="PC 링크 1">PC 1</a>
         <br>
-        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,36549241,36634860" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Windows_10_logo_%282019%29.svg" alt="PC" class="icon" width="20"> PC 2
-        </a>
+        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,36549241,36634860" class="link-btn" role="button" aria-label="PC 링크 2">PC 2</a>
         <br>
-        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,36710003,36820644" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Windows_10_logo_%282019%29.svg" alt="PC" class="icon" width="20"> PC 3
-        </a>
+        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,36710003,36820644" class="link-btn" role="button" aria-label="PC 링크 3">PC 3</a>
         <br>
-        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,36820645,38684087" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Windows_10_logo_%282019%29.svg" alt="PC" class="icon" width="20"> PC 4
-        </a>
+        <a href="melonapp://play?cType=1&menuId=1000002721&cList=38852970,38852971,36820645,38684087" class="link-btn" role="button" aria-label="PC 링크 4">PC 4</a>
 
         <br><br>
         
         <!-- 아이폰 링크 1개 -->
-        <a href="meloniphone://play/?ctype=1&menuid=0&cid=38852970,38852971,34421197,34748940,38852970,38852971,36549241,36634860,38852970,38852971,36710003,36820644,38852970,38852971,36820645,38684087" class="link-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/IPhone_13_Pro_Max_logo.svg" alt="iPhone" class="icon" width="20"> 아이폰
-        </a>
+        <a href="meloniphone://play/?ctype=1&menuid=0&cid=38852970,38852971,34421197,34748940,38852970,38852971,36549241,36634860,38852970,38852971,36710003,36820644,38852970,38852971,36820645,38684087" class="link-btn" role="button" aria-label="아이폰 링크">아이폰</a>
     </div>
 </body>
+</html>
